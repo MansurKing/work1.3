@@ -6,15 +6,17 @@ namespace work1._3
     {
         static void Main(string[] args)
         {
-            string name, workTime, moneyPosition;
+            string name;
+            string workTime;
+            string moneyPosition;
             int age;
 
-            Console.WriteLine("Здравствуйте мы приветствуем вас от компании Орифлейм. " +
+            Console.Write("Здравствуйте мы приветствуем вас от компании Орифлейм. " +
                 "И по сложившимся обстоятельтвам в мире нам необходимо узнать о вас побольше " +
                 "и если будет необходимо, то мы с радостью поможем вам в непростое время," +
-                " итак начнем с основных вопросов:\nКак мы можем к вам представиться?");
+                " итак начнем с основных вопросов:\nКак мы можем к вам представиться: ");
             name = Console.ReadLine();
-            Console.WriteLine("Рады с вами познакомиться " + name + "!\nСколько вам лет?");
+            Console.Write("Рады с вами познакомиться " + name + "!\nСколько вам лет: ");
             age = Convert.ToInt32(Console.ReadLine());
             Console.Write($"Хорошо! Кем вы работаете(-ли): ");
             workTime = Console.ReadLine();
